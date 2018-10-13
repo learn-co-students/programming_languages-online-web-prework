@@ -11,7 +11,7 @@ def reformat_languages(language)
         else
           hash[language] = {
              :type => value
-             :style => [key]
+                :style => [language_cat]
           }
         end
       end
