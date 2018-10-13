@@ -1,6 +1,6 @@
 def reformat_languages(languages)
   new = {}
-  language_hash.each do |key, value|
+  language.each do |key, value|
   languages.each do |x, y|
    attributes.each do |attribute, val|
       if language == :javascript
