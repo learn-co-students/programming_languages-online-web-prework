@@ -19,4 +19,3 @@ new_hash = {}
   end
   return new_hash
 end	
-end
