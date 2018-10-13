@@ -1,6 +1,6 @@
 def reformat_languages(language)
   hash = {}
-  language.each do |language_cat, languages|
+  language.each do |key, languages|
   languages.each do |language, attributes|
   attributes.each do |attribute, value|
         if language == :javascript
@@ -11,7 +11,7 @@ def reformat_languages(language)
         else
           hash[language] = {
              :type => value,
-             :style => [language_cat]
+             :style => [key]
           }
         end
       end
