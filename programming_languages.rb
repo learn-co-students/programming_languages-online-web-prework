@@ -5,7 +5,7 @@ def reformat_languages(language)
   attributes.each do |attribute, value|
         if language == :javascript
           hash[language] = {
-            :type => att_value,
+            :type => value,
             :style => [:oo, :functional]
           }
         else
