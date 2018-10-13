@@ -1,4 +1,4 @@
-def reformat_languages(languages)
+def reformat_languages(language_hash)
 new_hash = {}
   language_hash.each do |language_cat, languages|
     languages.each do |language, attributes|
