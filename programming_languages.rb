@@ -6,7 +6,7 @@ def reformat_languages(languages)
    if language == :javascript
    new[language] = 
     {
-      :type => att_value,
+      :type => value,
        :style => [:oo, :functional]
         }
        else
