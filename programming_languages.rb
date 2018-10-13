@@ -9,7 +9,7 @@ def reformat_languages(language)
             :style => [:oo, :functional]
           }
         else
-          new_hash[language] = {
+          hash[language] = {
              :type => att_value,
              :style => [language_cat]
           }
@@ -17,5 +17,5 @@ def reformat_languages(language)
       end
     end
   end
-  return _hash
+ hash
 end	
