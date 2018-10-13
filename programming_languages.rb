@@ -13,7 +13,7 @@ def reformat_languages(languages)
         new[language] = 
         {
            :type => value,
-           :style => [language_cat]
+           :style => [key]
          }      
        end
       end
