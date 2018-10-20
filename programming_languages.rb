@@ -5,8 +5,15 @@ def reformat_languages(languages)
   # hash of languages as keys, each has a value of another hash with two keys, type and styles
   # the value of type is a string, where the value of style is an array
   languages.each do |styles, lang_types|
-    new_hash[lang_types] = {}
-    new_hash[lang_types][:style] = [styles]
+    lang_types.each do |languages, types|
+      if new_hash[languages] == nil
+        new_hash[languages] = {}
+        new_hash[languages][:style] = [styles]
+      else
+        new_hash[languages][:style] << styles
+      end
+      new_hash[languages][:type] = types.values[0]
+    end
   end
-  binding.pry
+  new_hash
 end
