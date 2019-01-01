@@ -1,6 +1,15 @@
+require "pry"
 def reformat_languages(languages)
-languages_by_style[:00]
+h= {}
+  languages.each do |k,v|
+    add_to_hash=k
+    h=v
+    hash=v.keys
+    h.each do |language, key|
+     h[language]={:style =>[ ]}
+#  h[language][:style]     <<add_to_hash
 
-binding.pry
 end
-new_hash= {}
+end
+h
+end
