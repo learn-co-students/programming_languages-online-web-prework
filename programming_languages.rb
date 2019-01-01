@@ -1,4 +1,6 @@
 def reformat_languages(languages)
-  # your code here
+languages_by_style[:00]
+
+binding.pry
 end
 new_hash= {}
