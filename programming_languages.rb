@@ -6,21 +6,20 @@ def reformat_languages(languages)
     #style :oo data everything under style
     data.each do |lang, type|
       #lang - :ruby type - :type - "interpreted"
-      new_hash[] = lang
-      new_hash[lang] = type
+      new_hash.merge!(data){|lang, type|}
+      #new_hash has lang and type => type value
+
+    end
+  end
+
+
 binding.pry
 
 
 
-
-
-
-
-
-
-
-
-
-    end
-  end
+      end
 end
+
+#lang {
+#  type
+#    ":style" => style
