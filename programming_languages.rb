@@ -6,18 +6,18 @@ def reformat_languages(languages)
     #style :oo data everything under style
     data.each do |lang, type|
       #lang - :ruby type - :type - "interpreted"
-      new_hash.merge!(data){|lang, type|}
-      #new_hash has lang and type => type value
+      type.each do |key, value|
+        new_hash[lang] = {}
 
+      end
+      binding.pry
     end
+    new_hash.merge!(data){|lang, type|}
+    #new_hash has lang and type => type value
+
   end
 
 
-binding.pry
-
-
-
-      end
 end
 
 #lang {
