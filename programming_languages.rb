@@ -12,7 +12,6 @@ def reformat_languages(languages)
     end
   end
   
-  
   languages.each do |styles, language_data|
     language_data.each do |language_name, type|
       new_language_hash[language_name][:style] << styles
