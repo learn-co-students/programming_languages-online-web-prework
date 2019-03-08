@@ -4,7 +4,6 @@ def reformat_languages(languages)
   languages.each do |type, hash|
     # grabs language name (i.e. Ruby) keys and type value (i.e. "interpreted")
     hash.each do |name, attributes|
-      let type = "waffles"
       #if no value present, insert language into new hash as key with a value of attributes which is the key value pair
       new_hash[name] ||= attributes
       #create a value for each language key called style as an empty array
