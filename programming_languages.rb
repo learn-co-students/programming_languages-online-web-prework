@@ -1,5 +1,3 @@
-require 'pry'
-
 =begin
 # Set languages hash
 languages ={
@@ -57,5 +55,4 @@ def reformat_languages(languages)
   end
   
   new_hash 
-
 end
