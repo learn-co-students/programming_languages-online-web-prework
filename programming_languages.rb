@@ -8,5 +8,5 @@ def reformat_languages(l)
       hash[name][:style] << style
     end
   end
-  new_hash
+  hash
 end
